@@ -1,6 +1,6 @@
 const http = require('http');
 
-const request = http.request({ hostname: 'www.webcode.me' }, (res) => {
+const request = http.request({ hostname: 'webcode.me' }, (res) => {
     
     res.setEncoding('utf8');
     res.on('data', (chunk) => {
