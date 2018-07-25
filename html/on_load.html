@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>On load event</title>
+</head>
+<script>
+
+    const load = () => {
+        console.log("load event detected!");
+        console.log(document.body.innerHTML);
+    }
+    window.onload = load; 
+</script>
+
+<body>
+    <p>
+        A paragraph.
+    </p>
+</body>
+
+</html>
