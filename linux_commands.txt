@@ -27,3 +27,4 @@ top - show used system resources
 ssh - remotely log to other linux machine
 tail - display last n of lines
 head - display first n of lines
+wc - count words, bytes
