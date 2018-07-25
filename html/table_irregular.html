@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Irregular table</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+table {
+    border: 1px solid #999;
+    border-collapse: collapse;
+}
+
+td, th {
+
+    padding:5px;
+    border: 1px solid #999;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<table>
+<caption>Logging level rules</caption>
+<!--col>
+<colgroup span="8"></colgroup-->
+<thead>
+    <tr>
+      <th rowspan="2">Event level</th>
+      <th colspan="8" scope="colgroup" style="text-align: center">Configuration level</th>
+    </tr>
+    <tr>
+        <th scope="col">ALL</th>
+        <th scope="col">TRACE</th>
+        <th scope="col">DEBUG</th>
+        <th scope="col">INFO</th>
+        <th scope="col">WARN</th>
+        <th scope="col">ERROR</th>
+        <th scope="col">FATAL</th>
+        <th scope="col">OFF</th>
+    </tr>
+</thead>
+
+<tbody>
+
+    <tr>
+        <th scope="row">ALL</th>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>NO</td>        
+    </tr>
+    
+    <tr class="gray">
+        <th scope="row">TRACE</th>
+        <td>YES</td>
+        <td>YES</td>
+        <td>NO</td>
+        <td>NO</td>
+        <td>NO</td>
+        <td>NO</td>
+        <td>NO</td>
+        <td>NO</td>        
+    </tr>    
+    
+    <tr>
+        <th scope="row">DEBUG</th>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>NO</td>
+        <td>NO</td>        
+        <td>NO</td>
+        <td>NO</td>
+        <td>NO</td>        
+    </tr>   
+    
+    <tr class="gray">
+        <th scope="row">INFO</th>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>        
+        <td>NO</td>
+        <td>NO</td>
+        <td>NO</td>
+        <td>NO</td>
+    </tr>    
+    
+    <tr>
+        <th scope="row">WARN</th>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>           
+        <td>YES</td>
+        <td>NO</td>
+        <td>NO</td>
+        <td>NO</td>
+    </tr>  
+    
+    <tr class="gray">
+        <th scope="row">ERROR</th>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>         
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>NO</td>
+        <td>NO</td>
+    </tr>   
+    
+    <tr>
+        <th scope="row">FATAL</th>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>NO</td>        
+    </tr>   
+
+</tbody>
+
+</table>
+
+
+
+</body>
+</html>
