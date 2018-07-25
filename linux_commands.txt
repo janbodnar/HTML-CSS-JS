@@ -1,0 +1,29 @@
+pwd - print working directory
+man - show manual pages
+who - display who is logged in
+date - display current date
+cal - show calendar
+clear - clear screen
+file - determine file type
+cd - change directory
+mkdir - make directory
+find - search files
+grep - print files matching patterns
+ls - list files
+mv - move file
+rm - delete file
+ps - list processes
+kill - kill a process
+touch - create file
+cat - display contents of file
+df - available disk space
+du - disk usage
+free - memory usage
+uname - system information
+tar - work with tarballs
+zip - work with ZIP files
+ping - check connection
+top - show used system resources
+ssh - remotely log to other linux machine
+tail - display last n of lines
+head - display first n of lines
