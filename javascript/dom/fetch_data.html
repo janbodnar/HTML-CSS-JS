@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>dummy text</p>
+    <p>dummy text</p>
+    <p>dummy text</p>
+    <p>dummy text</p>
+    <p>dummy text</p>
+    <p>dummy text</p>
+    <p>dummy text</p>
+    <p>dummy text</p>
+    <p>dummy text</p>
+    <p>dummy text</p>
+
+    <button onclick="loadData()">Load</button>
+
+    <script>
+        function loadData() {
+            url = 'http://www.filltext.com/?rows=10&words={lorem|50}';
+            fetch(url)
+                .then(res => res.json())
+                .then((out) => {
+
+                    const pars = document.querySelectorAll('p');
+                    // console.log(pars);
+                    let i = 0;
+                    pars.forEach(e => {
+                        e.innerText = out[i++]['words'];
+                    });
+
+                    // console.log('Output: ', out);
+                }).catch(err => console.error(err));
+        }
+    </script>
+
+</body>
+
+</html>
