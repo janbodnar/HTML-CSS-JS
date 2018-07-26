@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Iterating DOM in JavaScript</h1>
+
+    <p>
+        A paragraph.
+    </p>
+
+    <div>
+        A generic container with an
+        <em>inline</em> element.
+    </div>
+
+    <script>
+        window.onload = function () {
+            getChildren(document.body);
+        }
+
+        function getChildren(mytag) {
+
+            const nit = document.createNodeIterator(
+                mytag,
+                NodeFilter.SHOW_ELEMENT,
+                function () {
+                    return NodeFilter.FILTER_ACCEPT;
+                }
+            );
+
+            let cnode;
+
+            while (cnode = nit.nextNode()) {
+                console.log(cnode.tagName.toLowerCase());
+            }
+        }
+    </script>
+
+</body>
+
+</html>
