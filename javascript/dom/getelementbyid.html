@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .container {
+            margin-bottom: 15px;
+            flex-flow: row wrap;
+            display: flex;
+        }
+
+        div>div {
+            width: 150px;
+            height: 150px;
+            border: 1px solid olive;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="en">English</div>
+        <div id="ru">Russian</div>
+        <div id="sw">Swedish</div>
+        <div id="sk">Slovak</div>
+    </div>
+
+    <select id="lang">
+        <option value="en">English</option>
+        <option value="ru">Russian</option>
+        <option value="sw">Swedish</option>
+        <option value="sk">Slovak</option>
+    </select>
+
+    <button onclick="doSelect()">Change colour</button>
+
+    <script>
+
+
+        function doSelect() {
+            const sel = document.getElementById('lang');
+            const lang = sel.options[sel.selectedIndex].value;
+            const el = document.getElementById(lang);
+            el.style.backgroundColor = 'lightgray';
+        }
+
+    </script>
+</body>
+
+</html>
