@@ -68,3 +68,7 @@ Inline elements
 <script> <select>  <small> <span>
 <strong> <sub> <sup> <textarea> <time>
 <tt> <var>
+
+VS Code terminal bash
+"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+
