@@ -1,4 +1,3 @@
-
 // assignment operator
 let x = 1;
 
@@ -9,6 +8,7 @@ x++;
 console.log(x);
 
 // decrement operator
+
 x--;
 console.log(x);
 
@@ -20,3 +20,6 @@ let w = +x;
 console.log(y);
 console.log(z);
 console.log(w);
+
+console.log('Hello ' + 'there');
+console.log('I have ' + 4 + ' apples');
