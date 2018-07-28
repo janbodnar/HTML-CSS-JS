@@ -30,8 +30,8 @@ let d = { x: 1, y: 2 };
 console.log(c == d);            // false
 console.log(c === d);           // false
 
-let e = "text";
-let f = "te" + "xt";
+let e = "forest";
+let f = "for" + "est";
 
 console.log(e == f);            // true
 console.log(e === f);           // true
