@@ -8,7 +8,7 @@ Proper use of methods brings the following advantages:
 - decomposing complex problems into simpler pieces
 - improving clarity of the code
 - reuse of code
-- Information hiding
+- information hiding
 
 Functions consist of:
 
