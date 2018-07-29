@@ -5,52 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Flex align content</title>
 
     <style>
-        /* flex-start: cross-start margin edge of the items is placed 
-                on the cross-start line
-            flex-end: cross-end margin edge of the items is placed on 
-               the cross-end line
-            center: items are centered in the cross-axis
-            baseline: items are aligned such as their baselines align
-            stretch (default): stretch to fill the container 
-                (still respect min-width/max-width) */
+
+    /* flex-start: lines packed to the start of the container
+    flex-end: lines packed to the end of the container
+    center: lines packed to the center of the container
+    space-between: lines evenly distributed; the first line is at the start of the container while the last one is at the end
+    space-around: lines evenly distributed with equal space around each line
+    stretch (default): lines stretch to take up the remaining space */
+
 
         main {
 
             display: flex;
             flex-wrap: wrap;
-            align-items: baseline;
+            align-content: space-around;
             border: 1px solid gray;
             height: 70vh;
         }
 
-        main>div:nth-of-type(1) {
+        main>div {
             flex: 0 0 1;
-            width: 280px;
-            height: 100px;
-            border: 1px solid gray;
-            padding-top: 35px;
-            margin: 10px;
-        }
-
-        main>div:nth-child(2) {
-            flex: 0 0 1;
-            width: 280px;
-            height: 180px;
-            border: 1px solid gray;
-            padding-top: 5px;
-            margin: 25px;
-        }
-
-        main>div:nth-child(3) {
-            flex: 0 0 1;
-            width: 280px;
+            width: 80px;
             height: 80px;
             border: 1px solid gray;
-            padding-top: 45px;
-            margin: 35px;
+            margin: 10px;
         }
     </style>
 
@@ -58,10 +39,32 @@
 
 <body>
 
+
     <main>
-        <div>First container</div>
-        <div>Second container</div>
-        <div>Third container</div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+
     </main>
 
 </body>
