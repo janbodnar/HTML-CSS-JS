@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* flex is shorthand for flex-grow, flex-shrink and flex-basis */
+        
+        * {
+            margin:0;
+        }
+
+        main {
+            min-height: 800px;
+            display: flex;
+            flex-flow: row;
+        }
+
+        main>article {
+            background: #76a0b4;
+            flex: 3 1 60%;
+            order: 2;
+        }
+
+        main>nav {
+            background: #e1e1ec;
+            flex: 1 6 20%;
+            order: 1;
+        }
+
+        main>aside {
+            background: #e1e1ec;
+            flex: 1 6 20%;
+            order: 3;
+        }
+
+        header,
+        footer {
+            display: block;
+            min-height: 100px;
+            background: #aaa081;
+        }
+
+        /* Too narrow to support three columns */
+
+        @media all and (max-width: 640px) {
+            main {
+                flex-flow: column;
+                flex-direction: column;
+            }
+
+            /* Return them to document order */
+            main>article,
+            main>nav,
+            main>aside {
+                
+                order: 0;
+            }
+
+            main>nav,
+            main>aside,
+            header,
+            footer {
+                min-height: 50px;
+                max-height: 50px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>header</header>
+    <main>
+        <article>article</article>
+        <nav>nav</nav>
+        <aside>aside</aside>
+    </main>
+    <footer>footer</footer>
+
+</body>
+
+</html>
