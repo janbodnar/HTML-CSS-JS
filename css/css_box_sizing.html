@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box sizing</title>
+
+    <style>
+        div {
+            border: 1px solid gray;
+            margin:5px;
+        }
+
+        #one {
+            width: 200px;
+            height: 180px;
+        }
+
+        #two {
+            box-sizing: content-box;
+            width: 200px;
+            height: 180px;
+            padding: 20px;
+        }
+
+        #three {
+            box-sizing: border-box;
+            width: 200px;
+            height: 180px;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- The box-sizing CSS property defines how the user agent should 
+        calculate the total width and height of an element. 
+    
+        content-box - border & padding added to the calculated element; default
+        border-box - shrinks content; easier for layouts
+    -->
+
+    <div id="one">Initial, no padding</div>
+    <div id="two">content box, padding</div>
+    <div id="three">border box, padding</div>
+
+
+</body>
+
+</html>
