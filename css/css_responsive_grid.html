@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive grid</title>
+
+    <style>
+        html {
+            padding: 1rem 2rem;
+            background-color: #00174f;
+        }
+
+        section {
+            padding: 10px;
+            overflow: hidden;
+            background: #fff;
+            margin: auto;
+        }
+
+        .column {
+            height: 350px;
+            border: 1px solid gray;
+            float: left;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            width: calc(100% / 4 - 5px);
+
+        }
+
+        @media (max-width: 900px) {
+            .column {
+                width: calc(100% / 3 - 5px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .column {
+                width: calc(100% / 2 - 5px);
+            }
+        }
+
+        @media (max-width: 300px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+        <div class="column">
+        </div>
+
+        <div class="column">
+        </div>
+
+        <div class="column">
+        </div>
+
+        <div class="column">
+        </div>
+
+        <div class="column">
+        </div>
+
+        <div class="column">
+        </div>
+
+        <div class="column">
+        </div>
+
+        <div class="column">
+        </div>
+
+    </section>
+
+</body>
+
+</html>
