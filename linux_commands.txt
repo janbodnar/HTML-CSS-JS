@@ -34,6 +34,10 @@ Add and delete user
 $ sudo adduser user3
 $ sudo userdel user3
 
+Sudoer
+
+# usermod -aG sudo username
+
 
 ssh -6 root@2001:19f0:5001:1b75:5400:01ff:fe9a:5724
 
