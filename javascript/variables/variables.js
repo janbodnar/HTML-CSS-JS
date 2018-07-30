@@ -14,5 +14,5 @@ let x = 10, y = 20;
 console.log(`x:${x}, y:${y}`);
 
 let a = b = c = d = 11;
-console.log(`a:${a}, b:${c}, c:${c}, d:${d}`);
+console.log(`a:${a}, b:${b}, c:${c}, d:${d}`);
 
