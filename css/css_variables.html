@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS variables</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        :root {
+            --main-col: rgb(187, 187, 187);
+            --com-col: rgb(39, 39, 121);
+            --foot-col: rgb(89, 117, 106);
+        }
+
+        main {
+            height: 80vh;
+            background-color: var(--main-col);
+        }
+
+        div.info {
+            background-color: var(--com-col);
+            width: 200px;
+            height: 200px;
+            border: 1px solid var(--com-col);
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            border-radius: 5%;
+        }
+
+        footer {
+            background-color: var(--foot-col);
+            height: 20vh;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        footer div {
+            width: 150px;
+            height: 100px;
+            background-color: var(--com-col);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+    </main>
+
+    <div class="info"></div>
+
+    <footer>
+        <div></div>
+    </footer>
+
+</body>
+
+</html>
