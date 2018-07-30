@@ -70,5 +70,6 @@ Inline elements
 <tt> <var>
 
 VS Code terminal bash
+File - Preferences - Settings
 "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
 
