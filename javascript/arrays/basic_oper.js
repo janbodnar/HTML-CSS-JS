@@ -1,4 +1,4 @@
-const words = [];
+let words = [];
 words.push("pen");
 words.push("pencil", "knife", "chair");
 
