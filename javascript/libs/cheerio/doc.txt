@@ -1,0 +1,3 @@
+$ sudo npm install -g local-web-server
+
+inside the project directory, start the server with ws command
