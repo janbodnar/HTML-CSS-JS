@@ -4,7 +4,7 @@ const request = require('request');
 request({
     method: 'GET',
     url: 'http://localhost:8000'
-}, function(err, res, body) {
+}, (err, res, body) => {
 
     if (err) return console.error(err);
 
