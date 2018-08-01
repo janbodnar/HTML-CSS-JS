@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 canvas line dashes</title>
+    <script>
+        function draw() {
+            let canvas = document.getElementById('myCanvas');
+            let ctx = canvas.getContext('2d');
+
+            ctx.translate(0.5, 0.5);
+
+            ctx.beginPath();
+            ctx.setLineDash([2]);
+            ctx.moveTo(10, 10);
+            ctx.lineTo(250, 10);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.setLineDash([7, 2]);
+            ctx.moveTo(10, 20);
+            ctx.lineTo(250, 20);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.setLineDash([4, 4, 1]);
+            ctx.moveTo(10, 30);
+            ctx.lineTo(250, 30);
+            ctx.stroke();
+        }            
+    </script>
+</head>
+
+<body onload="draw()">
+    <canvas id="myCanvas" width="350" height="250">
+    </canvas>
+</body>
+
+</html>
