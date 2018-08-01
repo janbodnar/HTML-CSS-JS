@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 canvas pie chart</title>
+    <style>
+        canvas {
+            background: #bbb
+        }
+    </style>
+    <script>
+        function draw() {
+
+            let canvas = document.getElementById('myCanvas');
+            let ctx = canvas.getContext('2d');
+
+            let beginAngle = 0;
+            let endAngle = 0;
+            let data = [170, 60, 45];
+            let total = 0;
+            let colours = ["#95B524", "#AFCC4C", "#C1DD54"];
+            const SPACE = 10;
+
+            for (var i = 0; i < data.length; i++) {
+                total += data[i];
+            }
+
+            ctx.strokeStyle = 'white';
+            ctx.lineWidth = 2;
+
+            for (let j = 0; j < data.length; j++) {
+
+                endAngle = beginAngle + (Math.PI * 2 * (data[j] / total));
+                ctx.fillStyle = colours[j];
+                ctx.beginPath();
+                ctx.moveTo(canvas.width / 2, canvas.height / 2);
+                ctx.arc(canvas.width / 2, canvas.height / 2, canvas.height / 2 - SPACE,
+                    beginAngle, endAngle, false);
+                ctx.closePath();
+                ctx.fill();
+                ctx.stroke();
+                beginAngle = endAngle;
+            }
+        }
+    </script>
+</head>
+
+<body onload="draw();">
+    <canvas id="myCanvas" width="350" height="300">
+    </canvas>
+</body>
+
+</html>
