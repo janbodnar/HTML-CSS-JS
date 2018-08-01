@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 canvas Bézier curve</title>
+    <meta charset="utf-8">
+    <script>
+        function draw() {
+
+            let canvas = document.getElementById('myCanvas');
+            let ctx = canvas.getContext('2d');
+
+            ctx.beginPath();
+            ctx.moveTo(20, 60);
+            ctx.bezierCurveTo(80, 20, 180, 160, 250, 50);
+            ctx.stroke();
+
+            ctx.fillStyle = 'cadetblue';
+            ctx.fillRect(80, 20, 4, 4);
+            ctx.fillRect(180, 160, 4, 4);
+        }
+    </script>
+</head>
+
+<body onload="draw()">
+    <canvas id="myCanvas" width="350" height="350">
+    </canvas>
+</body>
+
+</html>
