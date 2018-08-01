@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <title>Canvas smooth lines</title>
+  <style>
+    canvas {
+      border: 0.5px dotted lightGray;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="800" height="800">
+
+  </canvas>
+  <script>
+    let el = document.getElementById('myCanvas');
+    let ctx = el.getContext('2d');
+    let isDrawing;
+
+    el.onmousedown = (e) => {
+      isDrawing = true;
+      ctx.lineWidth = 10;
+      ctx.lineJoin = ctx.lineCap = 'round';
+      ctx.shadowBlur = 10;
+      ctx.shadowColor = 'rgb(0, 0, 0)';
+      ctx.moveTo(e.clientX, e.clientY);
+    };
+
+    el.onmousemove = (e) => {
+      if (isDrawing) {
+        ctx.lineTo(e.clientX, e.clientY);
+        ctx.stroke();
+      }
+    };
+
+    el.onmouseup = () => {
+      isDrawing = false;
+    }; 
+  </script>
+</body>
+
+</html>
