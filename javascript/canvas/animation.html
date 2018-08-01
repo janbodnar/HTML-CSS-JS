@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 canvas bubbles</title>
+    <style>
+        canvas {
+            border: 1px solid #bbb;
+            background: #000;
+        }
+    </style>
+    <script>
+
+        let cols = ["blue", "cadetblue", "green", "orange", "red", "yellow",
+            "gray", "white"];
+
+        const NUMBER_OF_CIRCLES = 35;
+        const DELAY = 30;
+
+        let maxSize;
+        let canvas;
+        let ctx;
+        let circles;
+
+        function Circle(x, y, r, c) {
+            this.x = x;
+            this.y = y;
+            this.r = r;
+            this.c = c;
+        }
+
+        function init() {
+
+            canvas = document.getElementById('myCanvas');
+            ctx = canvas.getContext('2d');
+
+            circles = new Array(NUMBER_OF_CIRCLES);
+
+            initCircles();
+            doStep();
+        }
+
+        function initCircles() {
+
+            let w = canvas.width;
+            let h = canvas.height;
+
+            maxSize = w / 10;
+
+            for (let i = 0; i < circles.length; i++) {
+
+                let rc = getRandomCoordinates();
+                let r = Math.floor(maxSize * Math.random());
+                let c = cols[Math.floor(Math.random() * cols.length)]
+
+                circles[i] = new Circle(rc[0], rc[1], r, c);
+            }
+        }
+
+        function doStep() {
+
+            for (let i = 0; i < circles.length; i++) {
+
+                let c = circles[i];
+                c.r += 1;
+
+                if (c.r > maxSize) {
+
+                    let rc = getRandomCoordinates();
+                    c.x = rc[0];
+                    c.y = rc[1];
+                    c.r = 1;
+                }
+            }
+
+            drawCircles();
+            setTimeout(doStep, DELAY);
+        }
+
+        function getRandomCoordinates() {
+
+            let w = canvas.width;
+            let h = canvas.height;
+
+            let x = Math.floor(Math.random() * (w - (maxSize / 2)));
+            let y = Math.floor(Math.random() * (h - (maxSize / 2)));
+
+            return [x, y];
+        }
+
+        function drawCircles() {
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let i = 0; i < circles.length; i++) {
+
+                ctx.beginPath();
+                ctx.lineWidth = 2.5;
+
+                let c = circles[i];
+                ctx.strokeStyle = c.c;
+                ctx.arc(c.x, c.y, c.r, 0, 2 * Math.PI);
+                ctx.stroke();
+            }
+        }
+    </script>
+</head>
+
+<body onload="init();">
+    <canvas id="myCanvas" width="350" height="250">
+    </canvas>
+</body>
+
+</html>
