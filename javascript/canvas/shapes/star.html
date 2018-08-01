@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 Canvas star shape</title>
+<script>
+    function draw() {
+        
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'gray';
+
+        var points = [ [ 0, 85 ], [ 75, 75 ], [ 100, 10 ], [ 125, 75 ], 
+            [ 200, 85 ], [ 150, 125 ], [ 160, 190 ], [ 100, 150 ], 
+            [ 40, 190 ], [ 50, 125 ], [ 0, 85 ] ];
+        
+        var len = points.length;
+
+        ctx.beginPath();
+        ctx.moveTo(points[0][0], points[0][1]);
+        
+        for (var i = 0; i < len; i++) {
+            ctx.lineTo(points[i][0], points[i][1]);
+        }        
+        
+        ctx.fill(); 
+
+    }
+</script>
+</head>
+
+<body onload="draw();">
+    <canvas id="myCanvas" width="350" height="250">
+    </canvas>
+</body>
+</html> 
