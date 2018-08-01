@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 canvas line caps</title>
+    <script>
+        function draw() {
+            let canvas = document.getElementById('myCanvas');
+            let ctx = canvas.getContext('2d');
+
+            ctx.translate(0.5, 0.5);
+            ctx.lineWidth = 8;
+
+            ctx.beginPath();
+            ctx.lineCap = 'square';
+            ctx.moveTo(10, 10);
+            ctx.lineTo(250, 10);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.lineCap = 'round';
+            ctx.moveTo(10, 30);
+            ctx.lineTo(250, 30);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.lineCap = 'butt';
+            ctx.moveTo(10, 50);
+            ctx.lineTo(250, 50);
+            ctx.stroke();
+
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(10, 0);
+            ctx.lineTo(10, 60);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(250, 0);
+            ctx.lineTo(250, 60);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(254, 0);
+            ctx.lineTo(254, 60);
+            ctx.stroke();
+        }
+    </script>
+</head>
+
+<body onload="draw()">
+    <canvas id="myCanvas" width="350" height="250">
+    </canvas>
+</body>
+
+</html>
