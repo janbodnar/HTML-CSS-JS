@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<title>HTML5 Canvas circle shape</title>
+<html>
+    <body>
+    <canvas id="myCanvas" width="350" height="350">
+        
+    </canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();       
+    </script>
+    </body>
+</html> 
