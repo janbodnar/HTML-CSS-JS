@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 canvas line joins</title>
+    <script>
+        function draw() {
+            let canvas = document.getElementById('myCanvas');
+            let ctx = canvas.getContext('2d');
+
+            ctx.translate(0.5, 0.5);
+            ctx.lineWidth = 8;
+
+            ctx.lineJoin = 'miter';
+            ctx.strokeRect(10, 10, 100, 100);
+
+            ctx.lineJoin = 'bevel';
+            ctx.strokeRect(130, 10, 100, 100);
+
+            ctx.lineJoin = 'round';
+            ctx.strokeRect(260, 10, 100, 100);
+        }
+    </script>
+</head>
+
+<body onload="draw()">
+    <canvas id="myCanvas" width="450" height="350">
+    </canvas>
+</body>
+
+</html>
