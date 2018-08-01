@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 canvas first example</title>
+    <script>
+        function draw() {
+            let canvas = document.getElementById('myCanvas');
+            let context = canvas.getContext('2d');
+
+            // do cool things with the context
+            context.font = '40pt Calibri';
+            context.fillStyle = 'blue';
+            context.fillText('First example', 150, 100);
+        }
+    </script>
+</head>
+
+<body onload="draw();">
+    <canvas id="myCanvas" width="578" height="200" style="border:1px solid #000000;">
+    </canvas>
+</body>
+
+</html>
