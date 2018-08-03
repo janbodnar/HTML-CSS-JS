@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        main {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        p {
+            width: 100px;
+            height: 80px;
+            border: 1px solid saddlebrown;
+            float: left;
+            margin: 5px;
+        }
+
+        p:nth-child(n+8):nth-child(-n+15) {
+            background: radial-gradient(black, red);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <!-- 
+            :nth-last-child(2) - second to the last
+            :nth-child(even) - every even
+            :nth-child(odd) - every odd
+            :nth-child(4n) - every fourth
+            :nth-child(2n+1) - 1, 3, 5, 7
+            :nth-child(-n+3) - first three elements
+            :nth-child(n+3) - all but the first two
+            :nth-child(n+8):nth-child(-n+15) - 8..15
+        -->
+
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+    </main>
+
+</body>
+
+</html>
