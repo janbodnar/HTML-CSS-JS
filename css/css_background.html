@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        main {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        div {
+            float:right;
+            width: 250px;
+            height: 150px;
+            border: 1px solid gray;
+            margin: 5px;
+        }
+
+        div:first-child {
+            background:saddlebrown;
+        }
+
+        div:nth-child(2) {
+            background: url('crack.png') repeat;
+        }
+
+        div:nth-child(3) {
+            background: linear-gradient(to right, darkblue, white)
+        }
+
+        div:nth-child(4) {
+            background: radial-gradient( darkblue, white)
+        }     
+        
+        div:nth-child(5) {
+            width: 300px;
+            height: 300px;
+            background: url('sid.png') center no-repeat;
+            background-size: contain;
+        }             
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+
+    </main>
+
+</body>
+
+</html>
