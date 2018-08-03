@@ -1,31 +1,60 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>CSS Text alignment</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-<style>
-.first { text-align:left }
-.second { text-align:center }
-.third { text-align:right }
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        main {
+            margin: 0 auto;
+            width: 600px;
+        }
+
+        p:first-child {
+            text-align: left;
+        }
+
+        p:nth-child(2) {
+            text-align: center;
+        }
+
+        p:last-child {
+            text-align: right;
+        }
+    </style>
 
 </head>
 
 <body>
 
-<p class="first">
-Today is a beautiful day.
-</p>
+    <main>
 
-<p class="second">
-Today is a beautiful day.
-</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae laborum animi velit ipsa qui fugiat assumenda quo fugit quis
+            autem porro doloribus facilis tempore nam, aliquam consequatur voluptate deserunt dignissimos dolorum amet, officia
+            omnis nihil. Quo possimus reiciendis accusantium quisquam dicta, dolores quidem nobis sequi porro placeat totam
+            tempore vel.
+        </p>
 
-<p class="third">
-Today is a beautiful day.
-</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae laborum animi velit ipsa qui fugiat assumenda quo fugit quis
+            autem porro doloribus facilis tempore nam, aliquam consequatur voluptate deserunt dignissimos dolorum amet, officia
+            omnis nihil. Quo possimus reiciendis accusantium quisquam dicta, dolores quidem nobis sequi porro placeat totam
+            tempore vel.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae laborum animi velit ipsa qui fugiat assumenda quo fugit quis
+            autem porro doloribus facilis tempore nam, aliquam consequatur voluptate deserunt dignissimos dolorum amet, officia
+            omnis nihil. Quo possimus reiciendis accusantium quisquam dicta, dolores quidem nobis sequi porro placeat totam
+            tempore vel.
+        </p>
+
+    </main>
 
 </body>
+
 </html>
