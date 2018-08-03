@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        main {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        p {
+            width: 300px;
+            height: 200px;
+        }
+
+        p:empty {
+            background: linear-gradient(45deg, orange, orange 60%, rgb(255, 124, 124));
+            opacity: 0.8;
+        }
+
+        p:first-child {
+            position:static;
+            background:azure;
+            /* ignored
+            top: 30px;
+            left: 50px; */
+        }
+
+        p:nth-child(3) {
+            position: relative;
+            top: 30px;
+            left: 50px;
+            background: linear-gradient(180deg, rgb(80, 207, 107), rgb(132, 0, 255) 60%, rgb(255, 124, 124));
+
+        }
+
+        p:nth-child(4) {
+            position: absolute;
+            color:white;
+            top: 30px;
+            left: 50px;
+            background: linear-gradient(to bottom right, black, yellow);
+        }
+
+        p:nth-child(5) {
+            position: fixed;
+            background: radial-gradient(crimson, skyblue);
+            top: 230px;
+            left: 750px;
+        }
+
+        p:nth-child(6) {
+            position: sticky;
+            top:50px;
+            z-index:-1;
+            background:linear-gradient(to left top, blue, red);
+        }    
+    </style>
+
+</head>
+
+<body>
+
+    <!-- CSS position: static (default), relative, absolute, fixed, sticky -->
+
+    <main>
+
+        <p>static</p>
+        <p></p>
+        <p>relative</p>
+        <p>absolute</p>
+        <p>fixed</p>
+        <p>sticky</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>        
+    </main>
+
+</body>
+
+</html>
