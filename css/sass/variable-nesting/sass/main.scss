@@ -1,0 +1,53 @@
+@import 'reset';
+
+$myfont: Georgia 1.1em;
+
+$th1-col: lightgray;
+$th1-bg-col: black;
+
+$th2-col: black;
+$th2-bg-col: lightgray;
+
+$ft-bg-col: rgb(80, 131, 80);
+
+body {
+
+    border: 1px solid gray;
+}
+
+main {
+
+    width: 600px;
+    margin: 0 auto;
+
+    div {
+    
+        margin: 5px;
+        width: 200px;
+        height: 150px;
+    }
+    
+    .theme1 { 
+    
+        color:$th1-col;
+        background-color: $th1-bg-col;
+    }
+    
+    .theme2 {
+    
+        color:$th2-col;
+        background-color: $th2-bg-col;
+    }
+    
+}
+
+footer {
+
+    div {
+        width:600px;
+        margin:  0 auto;
+        border: 1px solid gray;
+        padding: 10px;
+        background-color: $ft-bg-col;
+    }
+}
