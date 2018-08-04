@@ -1,0 +1,21 @@
+main {
+    width: 600px;
+    margin: 0 auto;
+}
+
+@mixin rectangle($w, $h, $col) {
+    width: $w;
+    height: $h;
+    background-color: $col;
+}
+
+.small-blue-rectangle {
+
+    @include rectangle(140px, 70px, rgb(0,0,255));
+    margin-bottom:30px;
+}
+
+.big-red-rectangle {
+
+    @include rectangle(300px, 250px, rgb(255,0,0));
+}
