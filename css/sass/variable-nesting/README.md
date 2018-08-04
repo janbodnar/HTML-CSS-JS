@@ -5,6 +5,6 @@ into Cascading Style Sheets (CSS).
 Put the following in the package.json file:
 ```
  "scripts": {
-    "sass": "node-sass -w sass -o public/css --output-style=expanded"
+    "sass": "node-sass -w sass -o public/css"
   },
 ```
