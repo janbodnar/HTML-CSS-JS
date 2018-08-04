@@ -1,0 +1,23 @@
+$debug: true;
+
+@mixin debugging {
+
+    @if ($debug) {
+        border: 1px dotted red;
+    }
+}
+
+header {
+    height:30vh;
+    @include debugging();
+}
+
+main {
+    height: 50vh;
+    @include debugging();
+}
+
+footer {
+    height:20vh;
+    @include debugging();
+}
