@@ -1,0 +1,20 @@
+@for $i from 1 through 5 {
+    .item-#{$i} { width: 6em * $i; }
+}
+
+main {
+
+    width: 600px;
+    margin: 0 auto;
+
+    div {
+        border:1px solid gray;
+        height: 4em;
+        margin:5px;
+
+        &:hover {
+            border: 1px solid red;
+        }
+    }
+    
+}
