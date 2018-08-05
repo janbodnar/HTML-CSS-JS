@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 20% 20% 60%;
+            grid-template-rows: 1fr 1fr;
+            gap: 5px 5px;
+        }
+
+        div:first-child {
+            width: 130px;
+            height: 100px;
+            place-self: center;
+        }
+
+        div {
+            font-size:6em;
+            padding: 5px;
+            height:250px;
+            background-color: rgb(32, 223, 223);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </main>
+
+</body>
+
+</html>
