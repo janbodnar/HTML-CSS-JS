@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-size: 1.3em;
+            margin:0;
+            background-color:red;
+        }
+
+        main {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 10fr 1fr;
+
+            grid-template-areas: "head head side" 
+                "main main side" 
+                "footer footer footer";
+            gap: 5px 5px;
+        }
+
+        div:first-child {
+            grid-area: head;
+            background-color: brown;
+        }
+
+        div:nth-child(2) {
+            grid-area: main;
+            background-color: burlywood;
+            height:auto;
+        }
+
+        div:nth-child(3) {
+            grid-area: side;
+            background-color:cadetblue;
+        }
+
+        div:nth-child(4) {
+            grid-area: footer;
+            align-self: stretch;
+
+            background-color: rgb(127, 127, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>head</div>
+        <div>main</div>
+        <div>side</div>
+        <div>footer</div>
+    </main>
+
+</body>
+
+</html>
