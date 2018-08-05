@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        main {
+
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        div {
+            float: left;
+            width: 150px;
+            height: 80px;
+            margin: 10px;
+            border: 1px solid gray;
+        }
+
+        div[id] {
+
+            border: 1px dashed red;
+        }
+
+        div[id|="one"] {
+            background-color: rgb(230, 230, 230);
+        }
+
+        a[href^="https"]:before {
+            content: url("secure.png");
+            position:relative;
+            top: 3px;
+            margin-right:4px;
+        }
+
+        a {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="one-a"></div>
+        <div id="one-b"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+
+    <footer>
+
+        <a href="https://www.sme.sk">sme.sk</a>
+        <a href="https://developer.mozilla.org">developer.mozilla.org</a>
+        <a href="http://www.tiny-website.com">www.tiny-website.com</a>
+        <a href="https://wikipedia.org">wikipedia.org</a>
+
+    </footer>
+
+</body>
+
+</html>
