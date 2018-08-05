@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    main {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border: 1px solid maroon;
+        padding: 15px;
+        height:90vh;
+    }
+
+    p {
+        /* float: left; */
+        margin: 15px;
+    }
+
+
+    main p {
+        width: 250px;
+        height: 120px;
+        padding:8px;
+        background-color: lightsteelblue;
+    }
+
+    main p:first-child {
+        overflow: hidden;
+    }
+
+    main p:nth-child(2) {
+        overflow: scroll;
+    }
+
+    main p:nth-child(3) {
+        overflow: visible;
+    }
+
+    main p:last-child {
+        overflow: auto;
+    }
+
+    .info {
+
+        position:absolute;
+        bottom: 3em;
+        left:3em;
+    }
+
+</style>
+
+<body>
+
+    <main>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum pariatur nisi necessitatibus eligendi natus iusto aperiam
+            fuga expedita, harum, molestiae at. Culpa soluta repudiandae aut! Illo necessitatibus error doloremque, assumenda
+            ex pariatur? Nobis libero quibusdam molestiae debitis eos suscipit ad iusto harum quam minus inventore nam corporis
+            nesciunt quo minima, aspernatur laboriosam mollitia dolor voluptates perferendis consectetur numquam voluptas?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum pariatur nisi necessitatibus eligendi natus iusto aperiam
+            fuga expedita, harum, molestiae at. Culpa soluta repudiandae aut! Illo necessitatibus error doloremque, assumenda
+            ex pariatur? Nobis libero quibusdam molestiae debitis eos suscipit ad iusto harum quam minus inventore nam corporis
+            nesciunt quo minima, aspernatur laboriosam mollitia dolor voluptates perferendis consectetur numquam voluptas?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum pariatur nisi necessitatibus eligendi natus iusto aperiam
+            fuga expedita, harum, molestiae at. Culpa soluta repudiandae aut! Illo necessitatibus error doloremque, assumenda
+            ex pariatur? Nobis libero quibusdam molestiae debitis eos suscipit ad iusto harum quam minus inventore nam corporis
+            nesciunt quo minima, aspernatur laboriosam mollitia dolor voluptates perferendis consectetur numquam voluptas?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum pariatur nisi necessitatibus eligendi natus iusto aperiam
+            fuga expedita, harum, molestiae at. Culpa soluta repudiandae aut! Illo necessitatibus error doloremque, assumenda
+            ex pariatur? Nobis libero quibusdam molestiae debitis eos suscipit ad iusto harum quam minus inventore nam corporis
+            nesciunt quo minima, aspernatur laboriosam mollitia dolor voluptates perferendis consectetur numquam voluptas?
+        </p>
+
+    </main>
+
+    <div class="info">
+
+        <ul>
+            <li>1st column - overflow:hiden</li>
+            <li>2st column - overflow:scroll</li>
+            <li>3st column - overflow:visible</li>
+            <li>4st column - overflow:auto</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
