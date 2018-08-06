@@ -13,3 +13,4 @@ people.forEach((e, idx) => {
 
 // const anyAdult = people.some(person => person.age >= 18);
 // console.log(anyAdult);  //true
+//https://stackoverflow.com/questions/16626735/how-to-loop-through-an-array-containing-objects-and-access-their-properties
