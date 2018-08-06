@@ -10,8 +10,8 @@ app.get("/", (req, res) => {
 
 app.get("/info", (req, res) => {
 
-    let name = req.param('name');
-    let age = req.param('age');
+    let name = req.query.name;
+    let age = req.query.age;
   
     res.send(`you have specified: ${name} and ${age}`);
 });
