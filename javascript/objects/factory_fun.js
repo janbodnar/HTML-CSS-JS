@@ -11,7 +11,7 @@ const dogFactory = (name, age, breed) => {
     };
 };
 
-let dog = dogFactory('max', 4, 'dalmatian');
+let dog = dogFactory('Max', 4, 'dalmatian');
 
 console.log(dog.bark());
 console.log(dog);
