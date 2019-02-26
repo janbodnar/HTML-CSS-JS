@@ -9,4 +9,6 @@ class Chrono {
     }
 }
 
-console.log(Chrono.now());
+let now = Chrono.now();
+
+console.log(now);
