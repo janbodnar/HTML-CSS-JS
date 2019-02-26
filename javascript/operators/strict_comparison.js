@@ -1,4 +1,4 @@
 console.log(1 === 1); // true
 console.log('1' === 1); // false
-console.log(8 !== 9); // true
-console.log(2 !== '2'); // true
+console.log(5 !== 6); // true
+console.log('5' !== '6'); // true
