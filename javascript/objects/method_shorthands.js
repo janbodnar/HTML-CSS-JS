@@ -9,14 +9,3 @@ const book = {
         return `${this.author}: ${this.title}`;
     }
 }
-
-
-
-// const book = {
-//     title: 'The Chase of the Golden Meteor',
-//     author: 'Jules Verne',
-//     info: function() {
-
-//         return `${this.author}: ${this.title}`;
-//     }
-// }
