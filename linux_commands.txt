@@ -87,3 +87,20 @@ $ sudo nano /var/www/html/info.php
 https://www.debian.org/doc/manuals/refcard/refcard
 http://cb.vu/unixtoolbox.xhtml
 https://files.fosswire.com/2007/08/fwunixref.pdf
+
+*****************************************************************
+
+finds all html files with link /gui/tkinter (-h option supresses filename prefix)
+
+find . -name "*.html" -type f -print0 | xargs -0  grep -h "href=\"/gui/tkinter"
+
+----------------------------------------
+replaces on output /gui/tkinter with /tkinter; shows only replaced lines on outout
+
+find . -name "*.html" -type f -print0 | xargs -0 sed -n 's/href=\"\/gui\/tkinter/href=\"\/tkinter/p'
+
+----------------------------------------
+real in-place replacing 
+
+find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/href=\"\/gui\/tkinter/href=\"\/tkinter/'
+
