@@ -1,5 +1,4 @@
-# Web-Course
-Examples for the Web Course
+# HTML, CSS, JS a PHP
 
-
-http://zetcode.com/
+Osnovy a materiály ku školeniu *Tvorba, programovanie webstránok I. - základy
+HTML a CSS, úvod do JavaScript a PHP*
