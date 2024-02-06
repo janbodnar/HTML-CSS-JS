@@ -43,8 +43,8 @@ určitú špecifickú oblasť.
 - Špecialisti pre backend alebo frontend
 - Devops špecialisti
 
-Developeri častokrát migrujú medzi rolami. Rola testera alebo frontend vývojára je ideálnou pozíciou pre začínajúcich  
-vývojárov. 
+Developeri častokrát migrujú medzi rolami. Rola testera alebo frontend vývojára je ideálnou pozíciou pre  
+začínajúcich vývojárov. 
 
 
 ## Technológie
@@ -80,9 +80,11 @@ Existuje veľké množstvo nástrojov, ktorá nám pomáhajú pri tvorbe webu:
   
 ## Klient a server
 
-Webové stránky/aplikácie fungujú na architektúre klient/server. *Klient* je najčastejšie webový prehliadač.  
-Môže byť ale aj konzolovou aplikáciou (curl) alebo iným druhom aplikácie. *Server* je hardware/OS, na ktorom  
-sa nachádzajú naše dokumenty a kde beží naša aplikácia. Tam sa tiež nachádzajú webový server, prípadne databáza.  
+Webové stránky/aplikácie fungujú na architektúre klient/server. *Klient* je najčastejšie webový  
+prehliadač. Môže byť ale aj konzolovou aplikáciou (curl) alebo iným druhom aplikácie.  
+
+*Server* je hardware/OS, na ktorom sa nachádzajú naše dokumenty a kde beží naša aplikácia.  
+Tam sa tiež nachádzajú webový server, prípadne databáza.  
 
 ## Webové frameworky
 
@@ -105,7 +107,8 @@ Angular, React a Vue.
 ## Hosting 
 
 Kde vlastne sa nachádzajú naše webové dokumenty?  
-Webové stránky/aplikácie sa hostujú na externých zdrojoch. (Len zriedkakedy sa hostujú u nás, na našich serveroch.)  
+Webové stránky/aplikácie sa hostujú na externých zdrojoch. (Len zriedkakedy sa hostujú u nás, na  
+našich serveroch.)  
 
 Poznáme:
 
@@ -115,9 +118,9 @@ Poznáme:
 - Cloud (AWS, Azure)
 - Serverové farmy
 
-*Content delivery network (CDN)* je geograficky distribuovaná skupina serverov ktorá kešuje obsah blízko ku koncovému  
-užívateľovi. CDN umožňuje rýchly a bezpečný transfer webového kontentu, vrátane HTML dokumentov, JS a CSS súborov, obrázkov  
-a videí. 
+*Content delivery network (CDN)* je geograficky distribuovaná skupina serverov ktorá kešuje obsah  
+blízko ku koncovému užívateľovi. CDN umožňuje rýchly a bezpečný transfer webového kontentu, vrátane  
+HTML dokumentov, JS a CSS súborov, obrázkov a videí.  
 
 Medzi známe CDN patria:
 
