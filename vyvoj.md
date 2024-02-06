@@ -67,5 +67,11 @@ ktorá je bežná pri vývoji webových aplikácií.
 - Logovanie udalostí
 - Architektúra aplikácie
 - Automatizácia tvorby aplikácie
+- Testovanie
+
+Medzi populárne backendové webové frameworky patria Laravel (PHP), Symfony (PHP), Express (JS), Spring Boot (Java) alebo  
+C# (ASP.NET Core).  
+Medzi pupulárne frontendové JS frameworky patria Angular, React a Vue.  
+
 
 
