@@ -56,7 +56,7 @@ Existuje veľké množstvo nástrojov, ktorá nám pomáhajú pri tvorbe webu:
 ## Klient a server
 
 Webové stránky/aplikácie fungujú na architektúre klient/server. *Klient* je najčastejšie webový prehliadač.  
-Môže byť ale aj konzolovou aplikáciou (curl) alebo iným druhom aplikácie. *Server* je hardware/OS, na ktorom 
+Môže byť ale aj konzolovou aplikáciou (curl) alebo iným druhom aplikácie. *Server* je hardware/OS, na ktorom  
 sa nachádzajú naše dokumenty a kde beží naša aplikácia. Tam sa tiež nachádzajú webový server, prípadne databáza.  
 
 ## Webové frameworky
