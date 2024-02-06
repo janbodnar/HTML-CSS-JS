@@ -43,7 +43,8 @@ určitú špecifickú oblasť.
 - Špecialisti pre backend alebo frontend
 - Devops špecialisti
 
-Developeri častokrát migrujú medzi rolami.  
+Developeri častokrát migrujú medzi rolami. Rola testera alebo frontend vývojára je ideálnou pozíciou pre začínajúcich  
+vývojárov. 
 
 
 
