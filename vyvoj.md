@@ -18,6 +18,10 @@ Stránky sú poprepájané pomocou hyperlinkov. Slúžia na navigáciu medzi jed
 Vo väčšine prípadov majú webové stránku svoju úvodnú, domovskú stránku (home page), ktorá obsahuje úvodný popis  
 stránky a jej základnú navigáciu.  
 
+V súčasnosti sa často časť funkcionality aplikácií outsorcuje na externé služby. Pretože ide o veľmi náročnú a  
+neustále meniacu sa problematiku, tak sa outsorcingom zjednoduší tvorba našej aplikácie. Ide bežne o služby  
+ako je logging, vyhľadávanie, autentifikácia, správa databáz.  
+
 
 ## Technológie
 
