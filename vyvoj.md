@@ -66,6 +66,6 @@ ktorá je bežná pri vývoji webových aplikácií.
 - Validácia dát
 - Logovanie udalostí
 - Architektúra aplikácie
-- Automatizácie tvorby aplikácie
+- Automatizácia tvorby aplikácie
 
 
