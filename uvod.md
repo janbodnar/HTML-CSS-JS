@@ -153,6 +153,10 @@ Existuje viacero postupov pre vývoj softwéru (Software Development Life Cycle 
 - Spiral
 
   
+## Budúcnosť
 
-
-
+- WebAssembly
+- Blockchain
+- Web 3
+- AI boty, Strojové učenie
+- Hlasové vyhľadávanie
