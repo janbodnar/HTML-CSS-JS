@@ -40,6 +40,8 @@ Technológie, ktoré umožňujú beh webových stránok:
 
 ## Podporné nástroje
 
+Existuje veľké množstvo nástrojov, ktorá nám pomáhajú pri tvorbe webu:  
+
 - Repozitár (Git/Github)
 - IDE (VS Code, PHP Storm, Web Storm)
 - FTP klient (FileZilla, WinSCP)
