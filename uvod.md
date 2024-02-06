@@ -47,7 +47,6 @@ Developeri častokrát migrujú medzi rolami. Rola testera alebo frontend vývoj
 vývojárov. 
 
 
-
 ## Technológie
 
 Základné technológie, ktoré sa využívajú na tvorbu webových stránok a aplikácií:
@@ -103,11 +102,42 @@ Medzi populárne backendové webové frameworky patria Laravel (PHP), Symfony (P
 Spring Boot (Java) alebo C# (ASP.NET Core). Medzi pupulárne frontendové JS frameworky patria  
 Angular, React a Vue.  
 
+## Hosting 
+
+Kde vlastne sa nachádzajú naše webové dokumenty?  
+Webové stránky/aplikácie sa hostujú na externých zdrojoch. (Len zriedkakedy sa hostujú u nás, na našich serveroch.)  
+
+Poznáme:
+
+- Zdieľaný hosting (U nás napr. Websupport)
+- Dedikovaný hosting
+- VPS (DigitalOcean, Vultr)
+- Cloud (AWS, Azure)
+- Serverové farmy
+
+*Content delivery network (CDN)* je geograficky distribuovaná skupina serverov ktorá kešuje obsah blízko ku koncovému  
+užívateľovi. CDN umožňuje rýchly a bezpečný transfer webového kontentu, vrátane HTML dokumentov, JS a CSS súborov, obrázkov  
+a videí. 
+
+Medzi známe CDN patria:
+
+- Cloudflare
+- Amazon CloudFront
+- Alibaba Cloud Content Delivery Service
+- Fastly
+- Lumen
+- Microsoft Azure CDN
+
+
+
 ## Architektúra, štandardné postupy
 
 Špecifickou oblasťou tvorby webových aplikácií je návrh jej architektúry. Pri návrhu aplikácie sa využívajú  
 rokmi overené postupy. Dobre navrhnutá aplikácia zvýši šancu jej úspešného zavŕšenia, predĺži jej životnosť   
 a zlepší jej škálovateľnosť.  
+
+Aplikácie sa skladajú z viacerých vrstiev: databázová, business, presenčná vrstva. MVC návrh delí aplikáciu  
+do nasledovných prvkov: model, view a controller.  
 
 ## Modely vývoja webových aplikácií
 
