@@ -32,7 +32,7 @@ konfigurácia jednotlivých zložiek aplikácie a programovanie pluginov.
 
 ## Roly 
 
-Žiaden vývojár nedokáže obsiahnuť všetky potrebné znalosti pre tvorby webu. Developeri sa často špecializujú na  
+Žiaden vývojár nedokáže obsiahnuť všetky potrebné znalosti pre tvorbu webu. Developeri sa často špecializujú na  
 určitú špecifickú oblasť. 
 
 - Dizajnéri
