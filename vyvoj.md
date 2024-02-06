@@ -22,6 +22,14 @@ V súčasnosti sa často časť funkcionality aplikácií outsorcuje na externé
 neustále meniacu sa problematiku, tak sa outsorcingom zjednoduší tvorba našej aplikácie. Ide bežne o služby  
 ako je logging, vyhľadávanie, autentifikácia, správa databáz.  
 
+Z hľadiska funkcionality rozdeľujeme webové aplikácie do typických kategórií: CMS (Content Management System),  
+elektronický obchod (e-commerce), firemné stránky, produktové stránky, či rôzne blogy.  
+
+Špecifickou kategóriou sú tzv. web content management systems, ktoré automatizujú a urýchľujú tvorbu webov.   
+Medzi najpopulárnejšie systémy v súčasnosti patria Wordpress, Drupal a Joomla. Odhaduje sa, že viac ako 40% z  
+top 10 miliónov stránok beží pod Wordpress. (Údaj z decembra 2023.) Tu sa pod vývojom webových aplikácií rozumie  
+konfigurácia jednotlivých zložiek aplikácie a programovanie pluginov.  
+
 
 ## Technológie
 
