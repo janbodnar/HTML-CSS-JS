@@ -30,6 +30,22 @@ Medzi najpopulárnejšie systémy v súčasnosti patria Wordpress, Drupal a Joom
 top 10 miliónov stránok beží pod Wordpress. (Údaj z decembra 2023.) Tu sa pod vývojom webových aplikácií rozumie  
 konfigurácia jednotlivých zložiek aplikácie a programovanie pluginov.  
 
+## Roly 
+
+Žiaden vývojár nedokáže obsiahnuť všetky potrebné znalosti pre tvorby webu. Developeri sa často špecializujú na  
+určitú špecifickú oblasť. 
+
+- Dizajnéri
+- Architekti
+- Databázoví špecialisti
+- Testeri
+- Securiťáci
+- Špecialisti pre backend alebo frontend
+- Devops špecialisti
+
+Developeri častokrát migrujú medzi rolami.  
+
+
 
 ## Technológie
 
@@ -85,6 +101,24 @@ funkcionalitu, ktorá je bežná pri vývoji webových aplikácií.
 Medzi populárne backendové webové frameworky patria Laravel (PHP), Symfony (PHP), Express (JS),  
 Spring Boot (Java) alebo C# (ASP.NET Core). Medzi pupulárne frontendové JS frameworky patria  
 Angular, React a Vue.  
+
+## Architektúra, štandardné postupy
+
+Špecifickou oblasťou tvorby webových aplikácií je návrh jej architektúry. Pri návrhu aplikácie sa využívajú  
+rokmi overené postupy. Dobre navrhnutá aplikácia zvýši šancu jej úspešného zavŕšenia, predĺži jej životnosť   
+a zlepší jej škálovateľnosť.  
+
+## Modely vývoja webových aplikácií
+
+Existuje viacero postupov pre vývoj softwéru (Software Development Life Cycle - SDLC)
+
+- Waterfall
+- Agile
+- Iterative
+- V-Shape
+- Spiral
+
+  
 
 
 
