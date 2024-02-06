@@ -33,7 +33,8 @@ Základné technológie, ktoré sa využívajú na tvorbu webových stránok a a
 - PHP/JS/Python/Java/C#
 
 Kombinácii HTML/CSS/JS sa hovorí *frontend*. Business logika aplikácie naprogramovaná v niektorom  
-jazyku sa nazýva *backend*.
+jazyku sa nazýva *backend*. Dnes sa však rozdiel medzi frontendom a backendom stiera, pretože mnohé  
+aplikácie prenášajú logiku aplikácie do browsera (aplikácie založené na React/Vue/Angular).  
 
 Technológie, ktoré umožňujú beh webových stránok:
 
