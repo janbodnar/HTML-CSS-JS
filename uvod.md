@@ -77,6 +77,14 @@ Existuje veľké množstvo nástrojov, ktorá nám pomáhajú pri tvorbe webu:
 - Developer tools
 - Terminál
 - Konzolové nástroje (curl, Putty, scp, ssh)
+
+## VS Code 
+
+VS Code je ultimatívny nástroj na tvorbu webových aplikácií. Obsahuje veľkú sadu nástrojov na tvorbu webu.  
+Ďalej má repozitár doplnkov (extensions), kde si môžeme násť veľké množstvo doplnkov. 
+
+VS Codium je klon bez telemetrie. https://vscodium.com/
+
   
 ## Klient a server
 
